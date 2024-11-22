@@ -8,10 +8,15 @@ void readFromFile(vector<string>& lines)
 {
     ifstream in;
     in.open("ggg.txt");
-    if(in.is_open()){
-        cout << "open";
+    if(in.is_open())
+    {
+        cout << "open"<<endl;
     }
-
+    string rm;
+    while(getline(in, rm))
+    {
+        lines.push_back(rm);
+    }
 }
 
 void printLines(const vector<string>& lines) {
