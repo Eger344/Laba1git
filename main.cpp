@@ -16,11 +16,20 @@ void printLines(const vector<string>& lines) {
 
 
 void writeToFile(const vector<string>& lines) {
+    ofstream outFile("aaaa.txt", ios::binary);
 
+    for (const auto& line : lines) {
+        outFile << line << endl;
+    }
+
+    outFile.close();
 }
+
+
 
 int main() {
     vector<string> lines;
+
 
     readFromFile(lines);
     printLines(lines);
