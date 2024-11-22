@@ -4,7 +4,13 @@
 #include <string>
 
 using namespace std;
-void readFromFile(vector<string>& lines) {
+void readFromFile(vector<string>& lines)
+{
+    ifstream in;
+    in.open("ggg.txt");
+    if(in.is_open()){
+        cout << "open";
+    }
 
 }
 
