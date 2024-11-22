@@ -9,8 +9,11 @@ void readFromFile(vector<string>& lines) {
 }
 
 void printLines(const vector<string>& lines) {
-
+    for (const auto& line : lines) {
+        cout << line << endl;
+    }
 }
+
 
 void writeToFile(const vector<string>& lines) {
 
